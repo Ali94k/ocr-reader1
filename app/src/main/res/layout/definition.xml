@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/text_url"
+    android:weightSum="1">
+    <TextView android:id="@+id/txt1"
+        android:text="@string/ocr_reader1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.Large"/>
+
+    <TextView
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/website_url"
+        android:id="@+id/txt2"/>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:id="@+id/edtURL"
+        android:inputType="textUri"
+        tools:ignore="TextViewEdits"
+        android:textSize="14sp" />-->
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/edtURL"
+        android:layout_marginTop="110dp"
+
+        android:layout_margin="20dp"
+        android:layout_weight="0.19" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/get_data"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btnGo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/result_data"
+        android:id="@+id/txt3"/>
+
+    <EditText
+        android:id="@+id/edtResp"
+        android:layout_width="match_parent"
+        android:layout_height="254dp"
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>
